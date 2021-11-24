@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: var(--border);
+}
+:root{
+    --button : #000;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    /* justify-content: center; */
+    /* align-self: center; */
+    text-align: center;
+    /* width: 100%; */
+}
+.main-container .back-button{
+    /* width: 10%; */
+    margin: 1rem auto 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    background: transparent;
+    border: 1px solid var(--button);
+}
+.main-container .heading{
+    
+}
+.main-container .text-line{
+    font-size: 1.5rem;
+}
+.main-container .form-container{
+
+}
+.main-container .form-container .formVal .ques1,.ques2,.ques3{
+    margin: 1rem;
+}
+.main-container .form-container .formVal .ques2{
+    padding-right: 3.5rem;
+}
+.container{
+    width: 100vw;
+}
+
+/* first form */
+.form-container{
+    padding: 1rem;
+    text-align: center;
+
+}
+.form-container .forms .input-ele{
+    display: flex !important;
+    flex-direction: row ;
+    justify-content: center;
+}
+.form-container .forms .input-ele input{
+    margin: 0.8rem;
+    width: 4rem;
+    padding: 0.4rem;
+    outline: none;
+    border: 2px solid var(--button);
+}
+/*  */
+.form-container .forms .ele-button{
+    margin: 1rem auto 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    background: transparent;
+    border: 1px solid var(--button);
+}
+
+.h2tag{
+    display: inline;
+}
+.outputHere{
+    border: 3px solid var(--button);
+    padding: 0.5rem;
+    margin: 1rem 0.7rem;
+}
+
+.label{
+    padding: 1rem 0.2rem;
+}
+#formula{
+    margin: 1rem;
+}
+a{
+    color: var(--button);
+}
+/* footer */
+.footer-container {
+    display: block;
+}
+.footer-container .footer-icon{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem;
+}
+
+/* select all the children of footer-icon */
+.footer-icon > *{
+    margin: 0.4rem;
+    padding: 0.5rem;
+    /* border: 2px solid var(--button); */
+    transition: 500ms;
+    animation-timing-function: linear;
+}
+
+/* Applying syles inside all the children in footer-icon class  */
+.footer-icon > * :hover{
+    transform: scale(1.2);
+}
+.label{
+    display: flex;
+    justify-content: center;
+}
+.label .h2tag{
+    margin-top: .7rem;
+}
