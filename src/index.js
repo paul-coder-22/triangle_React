@@ -44,7 +44,7 @@ ReactDOM.render(
 
         <div className="footer-container">
           <div className="footer-icon">
-            <div className="footer-icon1"> <a href="https://github.com/paul-coder-22/TriangleApp"><i
+            <div className="footer-icon1"> <a href="https://github.com/paul-coder-22/triangle_React.git"><i
               className="fab fa-github fa-2x"></i> </a></div>
             <div className="footer-icon2"><a href="https://www.linkedin.com/in/kiron-paul-1b81111b1/"><i
               className="fab fa-linkedin fa-2x"></i></a></div>
