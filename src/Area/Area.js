@@ -73,15 +73,16 @@ function Area(props) {
             const area = (thirdFormBase * thirdFormHypotenous * Math.sin(thirdFormAngle * Math.PI / 180)) / 2;
             setOutput(area.toFixed(2))
         }
+        console.log(output)
     }
+
+    const calculateBaseArea = (e) => setBaseArea({ ...baseArea, [e.target.name]: e.target.value })
+    const calculateSides = (e) => setSides({ ...sides, [e.target.name]: e.target.value })
+    const calculateBaseHeight = (e) => setBaseHeight({ ...baseHeight, [e.target.name]: e.target.value })
 
     return (
         <div>
-            <div className="main-container">
-                <button className="back-button">Go back</button>
-                <div className="heading">
-                    <h1>Calculate Area </h1>
-                </div>
+            <div className="main-container-area">
                 <div className="text-line">
                     <p>Select an option below as per the data you have for a triangle</p>
                 </div>
@@ -129,17 +130,20 @@ function Area(props) {
                                     Base =
                                     <input type="number"
                                         name="firstFormBase" required
-                                        onChange={(e) => {
-                                            setBaseArea({ ...baseArea, [e.target.name]: e.target.value })
-                                        }} />
+                                        // onChange={(e) => {
+                                        //     setBaseArea({ ...baseArea, [e.target.name]: e.target.value })
+                                        // }}
+                                        onChange={calculateBaseArea}
+                                    />
                                 </label>
                                 <label>
                                     Height =
                                     <input type="number"
                                         name="firstFormHeight" required
-                                        onChange={(e) => {
-                                            setBaseArea({ ...baseArea, [e.target.name]: e.target.value })
-                                        }}
+                                        // onChange={(e) => {
+                                        //     setBaseArea({ ...baseArea, [e.target.name]: e.target.value })
+                                        // }}
+                                        onChange={calculateBaseArea}
                                     />
                                 </label>
                             </div>
@@ -151,19 +155,19 @@ function Area(props) {
                                     <label>
                                         B
                                         <input name="first" type="number"
-                                            required onChange={(e) => setSides({ ...sides, [e.target.name]: e.target.value })} />
+                                            required onChange={calculateSides} />
                                     </label>
 
                                     <label >
                                         A
                                         <input type="number" name="second" required
-                                            onChange={(e) => setSides({ ...sides, [e.target.name]: e.target.value })} />
+                                            onChange={calculateSides} />
                                     </label>
 
                                     <label >
                                         C
                                         <input type="number" name="third" required
-                                            onChange={(e) => setSides({ ...sides, [e.target.name]: e.target.value })} />
+                                            onChange={calculateSides} />
                                     </label>
                                 </div>
                                 <button className="ele-button" type="submit" id="btn2">CLick</button>
@@ -172,20 +176,20 @@ function Area(props) {
                                     <label >
                                         B
                                         <input type="number" name="thirdFormBase"
-                                            onChange={(e) => setBaseHeight({ ...baseHeight, [e.target.name]: e.target.value })}
+                                            onChange={calculateBaseHeight}
                                             required />
                                     </label>
 
                                     <label >
                                         C
                                         <input type="number" name="thirdFormHypotenous"
-                                            onChange={(e) => setBaseHeight({ ...baseHeight, [e.target.name]: e.target.value })}
+                                            onChange={calculateBaseHeight}
                                             required />
                                     </label>
 
                                     <label > A Degree
                                         <input type="number" name="thirdFormAngle"
-                                            onChange={(e) => setBaseHeight({ ...baseHeight, [e.target.name]: e.target.value })}
+                                            onChange={calculateBaseHeight}
                                             required />
                                     </label>
                                 </div>
