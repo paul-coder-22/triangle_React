@@ -31,8 +31,6 @@ function Angles(props) {
         <div>
             <div className="container">
                 <div className="main-container">
-                    <button className="goBack">
-                        Go back</button>
                     <div className="form-element">
                         <div className="text-tag">
                             <h1>Enter the angles in below input boxes we will tell you if those
@@ -57,20 +55,6 @@ function Angles(props) {
                             }
                         </div>
                     </div>
-                </div>
-
-                <div className="footer-container">
-                    <div className="footer-icon">
-                        <div className="footer-icon1"> <a href="https://github.com/paul-coder-22/TriangleApp"><i
-                            className="fab fa-github fa-2x"></i></a></div>
-
-                        <div className="footer-icon2"><a href="https://www.linkedin.com/in/kiron-paul-1b81111b1/"><i
-                            className="fab fa-linkedin fa-2x"></i></a></div>
-
-                        <div className="footer-icon3"><a href="https://twitter.com/pulmicheal1"><i
-                            className="fab fa-twitter fa-2x"></i></a></div>
-                    </div>
-
                 </div>
             </div>
         </div>

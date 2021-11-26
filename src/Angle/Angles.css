@@ -52,13 +52,7 @@ a{
     cursor: pointer;
     border: 2px solid var(--button);
 }
-.main-container .goBack{
-    margin: 0 auto 1rem;
-    padding: 0.4rem 1rem;
-    border-radius: 1.5rem;
-    background: transparent;
-    border: 1px solid var(--button);
-}
+
 .main-container .form-element button{
     display: block;
     /* height: 1.8rem; */
@@ -71,60 +65,17 @@ a{
     border: 2px solid var(--button);
     font-weight: 800;
 }
-.footer-container {
-    /* text-align: center; */
-    /* height: 100%; */
-} 
-.footer-container button{
-    display: block;
-}
-.footer-icon{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    width: 95%;
-    justify-content: center;
-    margin: 1.6rem;
-}
 
-.footer-icon > *{
-    margin: 0.4rem;
-    padding: 0.5rem;
-    /* border: 2px solid var(--button); */
-    transition: 500ms;
-    animation-timing-function: linear;
-}
-
-/* Applying syles inside all the children in footer-icon class  */
-.footer-icon > * :hover{
-    transform: scale(1.2);
-}
 .main-container .form-element button:hover{
     background: var(--white);
 }
 
-.main-container .goBack:hover{
-    background: var(--button);
-    color: var(--white);
-    border: 2px solid var(--white);
-}
 .output{     
     font-size: larger;
     font-weight: 700;
   }
 
-.ele-button{
-    display: inline-block;
-    margin: 1rem auto 1rem;
-    padding: 0.4rem 1rem;
-    border-radius: 1.5rem;
-    background: transparent;
-    border: 1px solid var(--button);
-}
-.warning{
-    color: var(--warning);
-    display: block;
-}
+
 @media only screen and (max-width: 600px) {
     .main-container .form-element{
         width: 100%;

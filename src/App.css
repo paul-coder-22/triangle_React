@@ -1,3 +1,61 @@
 *{
+    padding: 0;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
+
 }
+:root{
+    --border:#000;
+    --background:blanchedalmond;
+    --form:#eee;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;   
+}
+.nav-items{
+    display: flex;
+}
+.nav-items > * {
+    margin: 0.5rem;
+    font-weight: 600;
+}
+
+a{
+    color: var(--border);
+}
+
+.footer-container {
+    display: block;
+}
+.footer-container .footer-icon{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem;
+}
+
+/* select all the children of footer-icon */
+.footer-icon > *{
+    margin: 0.4rem;
+    padding: 0.5rem;
+    /* border: 2px solid var(--button); */
+    transition: 500ms;
+    animation-timing-function: linear;
+}
+
+/* Applying syles inside all the children in footer-icon class  */
+.footer-icon > * :hover{
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 362px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    .main-container .div1{
+        width: 10rem;
+    }
+  }

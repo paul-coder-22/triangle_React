@@ -1,0 +1,33 @@
+* {
+    background-color: blanchedalmond;
+    font-family: "Poppins", sans-serif;
+  }
+  :root {
+    --button: #000;
+    --red: red;
+    --green: green;
+  }
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .red {
+    border-color: var(--red);
+  }
+  .green {
+    border-color: var(--green);
+  }
+  .fieldsetMargin {
+    margin: 0.4rem 1rem 1rem 1rem;
+    padding: 0.5rem;
+  }
+  .scoreContainer {
+    margin: 1rem auto 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    background: transparent;
+    border: 1px solid var(--button);
+  }
+  .quiz-label{
+    margin: 0.5rem;
+  }

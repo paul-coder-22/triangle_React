@@ -3,42 +3,38 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-a{
-    color: var(--border);
-}
 :root{
     --button : #000;
 }
-.main-container-area{
+a{
+    color: var(--button);
+}
+.main-container{
     display: flex;
     flex-direction: column;
+    min-height: 20vh;
+    /* justify-content: center; */
+    /* align-self: center; */
     text-align: center;
+    /* width: 100%; */
 }
 
-.main-container-area .text-line{
+
+.main-container .text-line{
     font-size: 1.5rem;
 }
-.main-container-area .form-container .formVal .ques1,.ques2,.ques3{
-    margin: 1rem;
-}
-.main-container-area .form-container .formVal .ques2{
-    padding-right: 3.5rem;
-}
-.container{
-    width: 100vw;
-}
-
-/* first form */
 .form-container{
     padding: 1rem;
     text-align: center;
 
 }
+
 .form-container .forms .input-ele{
     display: flex !important;
     flex-direction: row ;
     justify-content: center;
 }
+
 .form-container .forms .input-ele input{
     margin: 0.8rem;
     width: 4rem;
@@ -46,7 +42,6 @@ a{
     outline: none;
     border: 2px solid var(--button);
 }
-/*  */
 .form-container .forms .ele-button{
     margin: 1rem auto 1rem;
     padding: 0.4rem 1rem;
@@ -55,28 +50,19 @@ a{
     border: 1px solid var(--button);
 }
 
+
 .h2tag{
     display: inline;
 }
 .outputHere{
     border: 3px solid var(--button);
     padding: 0.5rem;
-    margin: 1rem 0.7rem;
+    margin: 1rem;
+    display: inline;
 }
-
 .label{
-    padding: 1rem 0.2rem;
+    padding: 1rem;
 }
 #formula{
     margin: 1rem;
-}
-a{
-    color: var(--button);
-}
-.label{
-    display: flex;
-    justify-content: center;
-}
-.label .h2tag{
-    margin-top: .7rem;
 }
